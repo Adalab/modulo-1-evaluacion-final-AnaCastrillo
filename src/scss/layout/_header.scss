@@ -1,0 +1,16 @@
+.header {
+  width: 44px;
+  height: 44px;
+  background-color: $cerulean;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__menu {
+    &--img {
+      display: block;
+    }
+  }
+}
