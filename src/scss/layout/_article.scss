@@ -1,28 +1,23 @@
 .article {
-  width: 90%;
-  margin: 30px auto 45px;
+  &__container {
+    width: 90%;
+    margin: 30px auto 45px;
 
-  @media all and (min-width: 768px) {
-    margin-bottom: 60px;
+    @media all and (min-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    @media all and (min-width: 768px) {
+      margin-top: 60px;
+      width: 57%;
+    }
   }
 
-  @media all and (min-width: 768px) {
-    margin-top: 60px;
-    width: 57%;
-  }
-
-  &__section {
+  &__type {
     color: $light-blue;
     font-family: $font-main;
     font-size: 14px;
     line-height: 2.14;
-  }
-
-  &__title {
-    font-family: $font-title;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.25;
   }
 
   &__text {
