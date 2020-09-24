@@ -101,3 +101,20 @@
     color: $white;
   }
 }
+
+// capitals
+
+.title {
+  &-main {
+    text-transform: uppercase;
+  }
+  &-section {
+    text-transform: capitalize;
+  }
+}
+
+.footer {
+  &-link {
+    text-transform: uppercase;
+  }
+}

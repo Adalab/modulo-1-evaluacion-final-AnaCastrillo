@@ -7,26 +7,31 @@
   text-align: center;
   padding: 60px 0 45px;
 
-  &__copy {
-    display: flex;
-    flex-direction: column;
+  @media all and (min-width: $tablet) {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: start;
+  }
 
-    .fa-heart {
-      color: $bright-orange;
-    }
+  @media all and (min-width: $desktop) {
+    justify-content: center;
+  }
+
+  .fa-heart {
+    color: $bright-orange;
   }
 
   &__container {
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    &--links {
-      margin-bottom: 30px;
+    @media all and (min-width: $tablet) {
+      width: 27.3%;
     }
-  }
-
-  &-link {
-    color: $white;
-    text-transform: uppercase;
+    @media all and (min-width: $desktop) {
+      width: 12%;
+    }
   }
 }
 
@@ -42,4 +47,7 @@
   text-align: center;
   justify-content: center;
   box-shadow: 0 2px 4px 0 $grey-brown;
+  animation-name: scrolling;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
