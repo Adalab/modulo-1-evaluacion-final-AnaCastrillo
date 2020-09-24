@@ -8,9 +8,10 @@ a {
   text-decoration: none;
 }
 
+// general style
+
 .section__title {
   font-family: $font-title;
-  font-weight: bold;
   text-transform: capitalize;
 }
 
@@ -18,8 +19,5 @@ a {
   display: block;
   border-radius: 30px;
   font-family: $font-main;
-  font-size: 20px;
-  font-weight: medium;
-  line-height: 2.25;
   text-align: center;
 }
