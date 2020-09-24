@@ -1,0 +1,45 @@
+.footer {
+  background-color: $dark-blue;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0 45px;
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+
+    .fa-heart {
+      color: $bright-orange;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    &--links {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-link {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.page-up {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -23px;
+  left: calc(50% - 25.5px);
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 $grey-brown;
+}

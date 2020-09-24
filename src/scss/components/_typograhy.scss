@@ -64,6 +64,17 @@
   }
 }
 
+.footer {
+  &-small {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  &-link {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
 // font family
 
 .title {
@@ -80,5 +91,13 @@
   &-article-type,
   &-link {
     font-family: $font-main;
+  }
+}
+
+.footer {
+  &-small,
+  &-link {
+    font-family: $font-main;
+    color: $white;
   }
 }
