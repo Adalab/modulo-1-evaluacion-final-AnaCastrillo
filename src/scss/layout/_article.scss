@@ -29,16 +29,9 @@
   }
 
   &__link {
-    display: block;
     color: $bright-orange;
     border: solid 2px $bright-orange;
-    border-radius: 30px;
-    font-family: $font-main;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 2.25;
     width: 75px;
-    text-align: center;
     transition: ease 0.2s;
 
     @media all and (min-width: 768px) {
