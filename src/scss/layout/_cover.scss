@@ -11,9 +11,11 @@
   color: $white;
   transition: ease 0.7s;
   padding-bottom: 53px;
+
   @media all and (min-width: $tablet) {
     padding-bottom: 45px;
   }
+
   @media all and (min-width: $desktop) {
     padding-bottom: 13px;
   }
