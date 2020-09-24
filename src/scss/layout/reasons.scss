@@ -6,24 +6,35 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 45px auto;
     align-items: center;
     width: 180px;
+    gap: 45px;
 
     @media all and (min-width: 768px) {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    &--cell {
+      grid-row: span 1;
+      @media all and (min-width: 768px) {
+        grid-column: span 1;
+      }
     }
   }
+
   &__title {
     font-family: $font-title;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 1.25;
+    line-height: 1.67;
+  }
 
-    @media all and (min-width: 768px) {
-      grid-row: 1 / 2;
-    }
+  &__text {
+    font-family: $font-main;
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
