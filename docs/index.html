@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluación Modulo 1</title>
+    <script
+      src="https://kit.fontawesome.com/1f28b64665.js"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Slab&family=Roboto:&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -14,24 +22,29 @@
 
   <body>
     <header class="header">
-      <div class="header__menu">
+      <a
+        class="header__menu"
+        href="https://adalab.es/"
+        target="_blank"
+        title="Menu"
+      >
         <img
           class="header__menu--img"
           src="./assets/images/ico-menu.svg"
           alt="menu"
           title="Menu"
         />
-      </div>
+      </a>
     </header>
 
     <main class="main">
-      <section class="cover">
-        <div class="cover__text">
-          <h1 class="cover__text--title">Anonymous proxy</h1>
-          <span class="cover__text--claim">In hac habitasse platea dictumst.</span>
+      <section id="cover" class="hero">
+        <div class="hero__text">
+          <h1 class="hero__text--title title-main">Anonymous proxy</h1>
+          <span class="text-claim">In hac habitasse platea dictumst.</span>
         </div>
 
-        <a href="#article" class="cover__down">
+        <a href="#reasons" class="scroll-button" title="Keep reading">
           <img
             class="cover__down--img"
             src="./assets/images/ico-scroll-down.svg"
@@ -41,20 +54,77 @@
       </section>
 
       <section id="article" class="article">
-        <small class="article__section">Insomnia tips</small>
-        <h2 class="article__title">Looking through a window</h2>
-        <p class="article__text">Docen accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+        <div class="article__container">
+          <small class="article__type text-article-type">Insomnia tips</small>
+          <h2 class="title-section">Looking through a window</h2>
+          <p class="article__text text-p">Docen accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+          <a
+            href="https://www.youtube.com/watch?v=REIOnCTwjF0&ab_channel=WorkingwithLemons"
+            class="article__link link text-link"
+            target="_blank"
+            >Go
+          </a>
+        </div>
+      </section>
+
+      <section id="reasons" class="reasons">
+        <h2 class="section__title title-section">3 reasons to purchase</h2>
+        <div class="reasons__container">
+          <div class="reasons__container--cell">
+            <h3 class="reasons__title title-reason">Ut sed metus</h3>
+            <p class="reasons__text text-p">
+              Lorem ipsum, dolor sit amet consectetur.
+            </p>
+          </div>
+          <div class="reasons__container--cell">
+            <h3 class="reasons__title title-reason">Curabitur ac erat</h3>
+            <p class="reasons__text text-p">
+              Mauris mattis urna quis lorem molestie.
+            </p>
+          </div>
+          <div class="reasons__container--cell">
+            <h3 class="reasons__title title-reason">Morbi dictum</h3>
+            <p class="reasons__text text-p">Aliquam in dolor et dolor tincidunt.</p>
+          </div>
+        </div>
         <a
-          href="https://www.youtube.com/watch?v=REIOnCTwjF0&ab_channel=WorkingwithLemons"
-          class="article__link"
+          href="https://ludwig.guru/s/there+are+many+more+reasons"
+          class="reasons__link link text-link"
           target="_blank"
-          >Go
-        </a>
+          >More reasons</a
+        >
       </section>
 
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <a href="#cover" class="scroll-up scroll-button">
+        <img
+          class="button-img"
+          src="./assets/images/ico-arrow.svg"
+          alt="go up"
+          title="Up up!"
+      /></a>
+      <div class="footer__container">
+        <small class="footer__copy--text footer-small">&copy; 2020 </small>
+        <small class="footer__copy--claim footer-small"
+          >we <i class="fas fa-heart"></i> components</small
+        >
+      </div>
+        <ul class="footer__container">
+          <li><a href="https://medium.com/adalab" class="footer-link">Articles</a></li>
+          <li><a href="https://adalab.es/" class="footer-link">Books</a></li>
+          <li><a href="https://adalab.es/cursos-desarrollo-web/" class="footer-link">Events</a></li>
+          <li><a href="https://adalab.es/" class="footer-link">Reasons</a></li>
+          <li><a href="https://adalab.es/" class="footer-link">Tips</a></li>
+        </ul>
+        <ul class="footer__container">
+          <li><a href="https://twitter.com/Adalab_Digital" class="footer-link">Twitter</a></li>
+          <li><a href="https://www.instagram.com/adalab_digital/" class="footer-link">Instagram</a></li>
+          <li><a href="https://mastodon.social/about" class="footer-link">Mastodon.social</a></li>
+        </ul>#
+      </div>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
   </body>
