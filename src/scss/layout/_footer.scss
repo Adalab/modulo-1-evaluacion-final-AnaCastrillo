@@ -35,19 +35,9 @@
   }
 }
 
-.page-up {
-  display: flex;
-  width: 45px;
-  height: 45px;
+.scroll-up {
   position: absolute;
+  box-shadow: 0 2px 4px 0 $grey-brown;
   top: -23px;
   left: calc(50% - 25.5px);
-  background-color: white;
-  border-radius: 25px;
-  text-align: center;
-  justify-content: center;
-  box-shadow: 0 2px 4px 0 $grey-brown;
-  animation-name: scrolling;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
