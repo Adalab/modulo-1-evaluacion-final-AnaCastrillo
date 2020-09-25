@@ -1,7 +1,7 @@
 .footer {
   background-color: $dark-blue;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   position: relative;
   align-items: center;
   text-align: center;
@@ -27,6 +27,12 @@
     }
     @media all and (min-width: $desktop) {
       width: 12%;
+    }
+  }
+
+  &__copy {
+    @media all and (min-width: $tablet) {
+      order: -1;
     }
   }
 }
